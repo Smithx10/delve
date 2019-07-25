@@ -1,4 +1,4 @@
-// +build linux darwin freebsd
+// +build linux darwin freebsd illumos
 
 package gdbserial
 

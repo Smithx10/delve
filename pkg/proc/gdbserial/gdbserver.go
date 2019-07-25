@@ -1326,7 +1326,7 @@ func (t *Thread) Blocked() bool {
 func (p *Process) loadGInstr() []byte {
 	var op []byte
 	switch p.bi.GOOS {
-	case "windows", "darwin", "freebsd":
+	case "windows", "darwin", "freebsd", "illumos":
 		// mov rcx, QWORD PTR gs:{uint32(off)}
 		op = []byte{0x65, 0x48, 0x8b, 0x0c, 0x25}
 	case "linux":
